@@ -8,9 +8,7 @@ namespace SRP
         public string Title { get ; }
         public string Author { get ; }
         public string Code { get ;  }
-        public string LibrarySector { get ; set; }
-        public string LibraryShelve { get ; set; }
-
+        
         public Book(String title, String author, String code)
         {
             this.Title = title;
@@ -18,11 +16,16 @@ namespace SRP
             this.Code = code;
         }
 
-        public void ShelveBook(String sector, String shelve)
+        public void Posiciones(String sector, String shelve)
         {
-            this.LibrarySector = sector;
-            this.LibraryShelve = shelve;
+            ShelveBook Posicion = new ShelveBook(sector,shelve);
         }
-
     }
 }
+
+/* 
+No cumple con el principio SRP, debido a que hay mas de una responsabilidad en la clase Book
+Las dos responsabilidades son: 
+1) Agregar libros y su informacion 
+2) Agregar donde se encuentra
+*/
