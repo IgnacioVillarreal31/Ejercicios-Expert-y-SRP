@@ -30,7 +30,7 @@ Nombre: AppointmentService
 Responsabilidad: Conocer datos del lugar y fecha, Valida datos ingresados
 
 Nombre: Hospital
-Responsabilidad: Generar una consulta
+Responsabilidad: Generar una consulta, Da numero consulta
 Colaboraciones: DatosDoctor,DatosPersona,AppointmentService
 
 #### 👩‍💻 Parte 3
